@@ -19,5 +19,6 @@ def test():
                 <ul>
         ''' + rs + "</ul></body></html>"
         f.write(temp)
+        
 if __name__ == '__main__':
 	test()
