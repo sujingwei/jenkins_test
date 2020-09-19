@@ -4,7 +4,7 @@ def test():
     for i in range(4):
         body = "jenkkins test demo! git testing: " + str(datetime.datetime.now())
         print(body)
-        rs += "<li>" + body + "</li>"
+        rs += "<li style='color:yellowgreen;'>" + body + "</li>"
         time.sleep(1)
     with open('report/repoart_demo.html', 'w+') as f:
         temp = '''
