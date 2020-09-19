@@ -1,5 +1,8 @@
 import time, os, datetime
 def test():
+    """
+    测试邮件推送
+    """
     rs = '';
     for i in range(4):
         body = "jenkkins test demo! git testing: " + str(datetime.datetime.now())
@@ -19,6 +22,6 @@ def test():
                 <ul>
         ''' + rs + "</ul></body></html>"
         f.write(temp)
-        
+
 if __name__ == '__main__':
 	test()
